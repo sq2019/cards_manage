@@ -43,7 +43,7 @@ def new_card():
         print('新增名片成功')
     conn.commit()
     conn.close()
-    # 3.提示用户添加成功
+
 
 def show_all():
     """显示所有名片"""
@@ -88,12 +88,11 @@ def search_card():
 
     else:
         print('搜索结果为空')
-    # conn.commit()
-    # conn.close()
+
 
 
 def del_card(find_cards, conn):
-
+   #对搜索处的对象进行删除或修改操作
     print(find_cards[1])
     print('请选择你所需要的操作')
     print('1：删除')
